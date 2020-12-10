@@ -82,18 +82,6 @@ module.exports = {
       ]
     }
   ],
-  filters: {
-    /** @param {{ features: string[] }} answers */
-    'bin/**': answers => answers.features.includes('cli'),
-    /** @param {{ features: string[] }} answers */
-    'docs/**': answers => answers.features.includes('docs'),
-    /** @param {{ features: string[] }} answers */
-    'example/**': answers => answers.features.includes('example'),
-    /** @param {{ features: string[] }} answers */
-    'test/**': answers => answers.features.includes('test'),
-    /** @param {{ features: string[] }} answers */
-    '.travis.yml': answers => answers.features.includes('test')
-  },
   install: 'npm',
   init: true,
   setup: async ctx => {
