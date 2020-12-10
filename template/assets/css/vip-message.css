@@ -1,0 +1,104 @@
+.vip-message {
+	font-size: 14px;
+	position: fixed;
+	z-index: 1061;
+	width: 100%;
+	top: 16px;
+	left: 0;
+	pointer-events: none
+}
+
+.vip-message-notice {
+	padding: 8px;
+	text-align: center;
+	-webkit-transition: height .3s ease-in-out, padding .3s ease-in-out;
+	transition: height .3s ease-in-out, padding .3s ease-in-out
+}
+
+.vip-message-notice:first-child {
+	margin-top: -8px
+}
+
+.vip-message-notice-close {
+	position: absolute;
+	right: 4px;
+	top: 10px;
+	color: #999;
+	outline: 0
+}
+
+.vip-message-notice-close i.vip-icon {
+	font-size: 22px;
+	color: #999;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
+	position: relative;
+	top: -3px
+}
+
+.vip-message-notice-close i.vip-icon:hover {
+	color: #444
+}
+
+.vip-message-notice-content {
+	display: inline-block;
+	pointer-events: all;
+	padding: 8px 30px;
+	border: 1px solid #99CCFF;
+	box-shadow: 0px 9px 43px 0px rgba(51, 153, 255, 0.3);
+	-webkit-box-shadow: 0px 9px 43px 0px rgba(51, 153, 255, 0.3);
+	border-radius: 24px;
+	background: #fff;
+	position: relative;
+	
+	
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 800;
+	font-style: italic;
+	color: #3399FF;
+}
+
+.vip-message-notice-content-text {
+	display: inline-block
+}
+
+.vip-message-notice-closable .vip-message-notice-content-text {
+	padding-right: 32px
+}
+
+.vip-message-success .vip-icon {
+	color: #19be6b
+}
+
+.vip-message-error .vip-icon {
+	color: #ed4014
+}
+
+.vip-message-warning .vip-icon {
+	color: #f90
+}
+
+.vip-message-info .vip-icon,
+.vip-message-loading .vip-icon {
+	color: #2d8cf0
+}
+
+.vip-message .vip-icon {
+	margin-right: 4px;
+	font-size: 16px;
+	vertical-align: middle
+}
+
+.vip-message-custom-content {
+	vertical-align: middle
+}
+.vip-message-custom-content b{
+	display: inline-block;
+	width: 24px;
+	height: 19px;
+	background-image: url('../imges/vip-message/shangsheng.png');
+	background-size: 24px 19px;
+	vertical-align: sub;
+	margin-left: 3px;
+}
