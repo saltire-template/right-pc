@@ -89,14 +89,14 @@ module.exports = {
   },
   complete: async ctx => {
     console.clear()
-    console.log(chalk`使用\${ctx.template}\模板成功创建了项目： \${ctx.project}\.\n`)
+    console.log(chalk`使用模板[${ctx.template}]成功创建了项目： ${ctx.project}\.\n`)
     if (ctx.dest !== process.cwd()) {
       console.log(chalk`  $ {cyan cd ${path.relative(process.cwd(), ctx.dest)}}`)
     }
     if (ctx.config.install === false) {
       console.log(chalk`  $ {cyan npm install} {gray # or yarn}`)
     }
-    console.log(chalk`  $ {cyan ${ctx.config.install ? ctx.config.install : 'npm'} test}`)
+    console.log(chalk`  $ {cyan ${ctx.config.install ? ctx.config.install : 'npm'} dev}`)
     console.log(chalk`\n >> 现在你可以使用它了,尝试进行该项目并使用npm run dev运行~~)`)
   }
 }
