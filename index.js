@@ -71,6 +71,7 @@ module.exports = {
       message: '是否立即安装依赖：',
       initial: true
     },
+    
     {
       name: 'pm',
       type: prev => process.env.NODE_ENV === 'test' || prev ? 'select' : null,
