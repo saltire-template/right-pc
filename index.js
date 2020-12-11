@@ -45,7 +45,8 @@ module.exports = {
     {
       name: 'url',
       type: 'text',
-      message: '作者主页（github或掘金）：'
+      message: '作者主页（github或掘金）：',
+      initial: 'https://juejin.cn/user/668105060404104'
     },
     {
       name: 'license',
@@ -54,9 +55,6 @@ module.exports = {
       hint: ' ',
       choices: [
         { value: 'MIT' },
-        { value: 'BSD-3-Clause' },
-        { value: 'Apache' },
-        { value: 'Unlicense' }
       ]
     },
     {
