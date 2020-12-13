@@ -90,12 +90,12 @@ module.exports = {
     console.clear()
     console.log(chalk.green(`\n ## 使用模板[${ctx.template}]成功创建了项目： ${ctx.project}\.\n`))
     if (ctx.dest !== process.cwd()) {
-      console.log(chalk`  $ {cyan cd ${path.relative(process.cwd(), ctx.dest)}}`)
+      console.log(chalk.cyan(`  $ cd ${path.relative(process.cwd(), ctx.dest)}`))
     }
     if (ctx.config.install === false) {
-      console.log(chalk`  $ {cyan npm install} {gray # or yarn}`)
+      console.log(chalk.cyan(`  $ npm install or # yarn`))
     }
-    console.log(chalk`  $ {cyan ${ctx.config.install ? ctx.config.install : 'npm'} run dev}`)
-    console.log(chalk.green(`\n ## 现在你可以使用它了,尝试进入该项目并使用npm run dev运行~~`))
+    console.log(chalk.cyan(`  $ ${ctx.config.install ? ctx.config.install : 'npm'} run dev`))
+    console.log(chalk.green(`\n ## 现在你可以使用它了,尝试进入该项目运行 npm run dev ~~`))
   }
 }
