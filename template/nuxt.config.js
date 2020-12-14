@@ -56,11 +56,13 @@ export default {
     '@/plugins/common',
     '@/plugins/baseUrl',
     '@/store/index',
+    <% if (saltire_util) { %>
     {
       src: '@/plugins/saltire_util',
       ssr: false,
       mode: 'client'
     },
+    <% } %>
     {
       src: '@/plugins/message',
       ssr: false,

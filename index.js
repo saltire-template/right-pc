@@ -64,6 +64,12 @@ module.exports = {
       initial: 'saltire'
     },
     {
+      name: 'saltire_util',
+      type: 'confirm',
+      message: '是否使用saltire_util工具库：',
+      initial: true
+    },
+    {
       name: 'install',
       type: 'confirm',
       message: '是否立即安装依赖：',
@@ -81,6 +87,10 @@ module.exports = {
       ]
     }
   ],
+  filters: {
+    /** @param {{ features: string[] }} answers */
+    'plugins/saltire_util.js': answers => answers.saltire_util,
+  },
   install: 'npm',
   init: true,
   setup: async ctx => {
